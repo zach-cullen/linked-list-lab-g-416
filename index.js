@@ -26,3 +26,4 @@ function addressAt(index, linkedList, collection) {
     return prevNode.next
   }
 }
+
