@@ -45,3 +45,9 @@ function insertNodeAt(index, newNode, linkedList, collection) {
   // update prev to point to new node
   collection[prev]['next'] = newNode
 }
+
+function deleteNodeAt(index, linkedList, collection) {
+  // 
+}
+
+
