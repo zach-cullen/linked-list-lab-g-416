@@ -17,3 +17,5 @@ function nodeAt(index, linkedList, collection) {
   }
   return node
 }
+
+function addressAt()
