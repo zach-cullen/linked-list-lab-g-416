@@ -42,7 +42,7 @@ function insertNodeAt(index, newNode, linkedList, collection) {
   // get address of node pointing to bumped
   const prev = addressAt(index - 1, linkedList, collection)
   // add new node to collection pointing to bumped
-  collection[newNode] = {next: bumped}
+  collection[newNode]['next'] = bumped
   // update prev to point to new node
   collection[prev]['next'] = newNode
   console.log('AFTER: ', collection)
