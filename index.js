@@ -7,5 +7,5 @@ function headNode(linkedList, collection) {
 }
 
 function next(collection, node) {
-  return collection(node.next)
+  return collection[node.next]
 }
