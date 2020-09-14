@@ -52,7 +52,7 @@ function deleteNodeAt(index, linkedList, collection) {
     linkedList = addressAt(1, linkedList, collection)
   } else {
     // get address of previous node
-    let prevNode = addressAt(index - 1)
+    let prevNode = addressAt(index - 1, linkedList, collection)
     // set next of previous node to next of node at index (skipping over node)
     collection[prevNode]['next'] = nodeAt(index, linkedList, collection).next
   }
