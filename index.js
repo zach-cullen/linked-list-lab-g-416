@@ -37,11 +37,14 @@ function indexAt(node, collection, linkedList) {
 
 function insertNodeAt(index, newNode, linkedList, collection) {
   // get address of node currently at index
-  let bumped = addressAt(index, linkedList, collection)
+  const bumped = addressAt(index, linkedList, collection)
+  
   // get address of node pointing to bumped
-  let prev = addressAt(index - 1, linkedList, collection)
+  const prev = addressAt(index - 1, linkedList, collection)
+  
   // add new node to collection pointing to bumped
   collection.newNode = {next: bumped}
+  
   // update prev to point to new node
   collection.prev.next = newNode
 }
