@@ -5,3 +5,7 @@ function getName(node) {
 function headNode(linkedList, collection) {
   return collection[linkedList]
 }
+
+function next(collection, node) {
+  return collection(node.next)
+}
