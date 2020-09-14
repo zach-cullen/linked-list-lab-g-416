@@ -2,6 +2,6 @@ function getName(node) {
   return node.name
 }
 
-function headNode(collection) {
-  return
+function headNode(linkedList, collection) {
+  return collection[linkedList]
 }
