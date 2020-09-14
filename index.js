@@ -10,6 +10,10 @@ function next(node, collection) {
   return collection[node.next]
 }
 
-function nodeAt(index, collection) {
-  return collection[index]
+function nodeAt(index, linkedList, collection) {
+  let node = headNode(linkedList, collection)
+  for (let i = 0; i < index; i++) {
+    node = next(node, collection)
+  }
+  return node
 }
