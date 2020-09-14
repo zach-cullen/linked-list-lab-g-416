@@ -38,7 +38,7 @@ function indexAt(node, collection, linkedList) {
 function insertNodeAt(index, newNode, linkedList, collection) {
   // get address of node currently at index
   const bumped = addressAt(index, linkedList, collection)
-  
+  console.log('BUMPED: ', bumped)
   // get address of node pointing to bumped
   const prev = addressAt(index - 1, linkedList, collection)
   
