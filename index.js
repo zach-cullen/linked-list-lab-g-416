@@ -45,8 +45,8 @@ function insertNodeAt(index, newNode, linkedList, collection) {
   console.log('PREV: ', prev)
   console.log('prevNode: ', collection[prev])
   // add new node to collection pointing to bumped
-  collection.newNode = {next: bumped}
+  collection[newNode] = {next: bumped}
   
   // update prev to point to new node
-  collection.prev.next = newNode
+  collection[prev]['next'] = newNode
 }
