@@ -27,5 +27,11 @@ function addressAt(index, linkedList, collection) {
   }
 }
 
-function indexAt(node, linkedList, collection)
+function indexAt(node, collection, linkedList) {
+  let i = 0
+  while(nodeAt(i, linkedList, collection) != node) {
+    i++
+  }
+  return i
+}
 
