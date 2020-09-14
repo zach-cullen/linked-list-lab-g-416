@@ -9,3 +9,7 @@ function headNode(linkedList, collection) {
 function next(node, collection) {
   return collection[node.next]
 }
+
+function nodeAt(node, collection) {
+  return collection[node]
+}
